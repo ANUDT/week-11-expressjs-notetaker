@@ -4,11 +4,17 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "node server.js"
   },
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
     "uuid": "^8.3.2"
+  },
+  "keywords": [],
+  "author": "",
+  "devDependencies": {
+    "jest": "^29.7.0"
   }
 }
