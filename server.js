@@ -14,6 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 app.use("./routes/apiroutes");
 app.use("./routes/htmlroutes");
+app.use("./routes/index.js");
 
 app.get('/', (req, res) =>
   res.sendFile(path.join(__dirname, '/public/index.html'))

@@ -4,7 +4,9 @@ const { v4: uuidva } = require('uuid');
 rouet
 const tipsRouter = require('./tips');
 const feedbackRouter = require('./feedback');
-// TODO: import your diagnostics route
+const diagnosticsRouter =require('./diagnostics');
+
+
 
 router.use('/tips', tipsRouter);
 router.use('/feedback', feedbackRouter);
