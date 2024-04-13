@@ -1,6 +1,12 @@
-[
+const fs =require ('fs');
+
+const notes = [
     {
         "title":"Test Title",
         "text":"Test text"
     }
-]
+];
+
+fs.writeFileSync('db.json', notesJson);
+
+console.log ('Saved notes to db,json');

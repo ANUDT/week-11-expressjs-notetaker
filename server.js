@@ -4,6 +4,7 @@ const { clog } = require( './middleware/clog.js');
 const api = require('./routes/index.js');
 
 const PORT = process.env.port || 3001;
+const fs =require('fs');
 
 const app = express();
 
