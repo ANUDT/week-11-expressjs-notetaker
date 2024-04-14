@@ -10,6 +10,6 @@ const diagnosticsRouter =require('./diagnostics');
 
 router.use('/tips', tipsRouter);
 router.use('/feedback', feedbackRouter);
-// TODO: Initialize diagnostics route
+
 
 module.exports = router;

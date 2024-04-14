@@ -13,7 +13,7 @@ app.use(clog);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
-app.use("./routes/apiroutes");
+app.use("./routes/diagnostics.json");
 app.use("./routes/htmlroutes");
 app.use("./routes/index.js");
 
