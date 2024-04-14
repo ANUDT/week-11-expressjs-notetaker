@@ -1,18 +1,20 @@
-const apiRoutes = require('express').Router();
+const express = require('express');
+const apiRoutes=express.Router();
 const { v4: uuidv4 } = require('uuid');
 const fs =require ("fs");
-const { readAndAppend, readFromFile } = require('../helpers/fsUtils');
+onst { readAndAppend, readFromFile } = require('../helpers/fsUtils');
 
-// GET Route for retrieving diagnostic information
-apiRoutes.get('./routes/apiRoutes.js', async (req, res) => {
-  const db
-  
-  // TODO: Logic for sending all the content of db/diagnostics.json
-});
+apiRoutes.get('/diagnostics', async (req, res) => {
+  try {
+      const data = await readFromFile('db.json', notesJson);
+ });
 
-// POST Route for a error logging
+ res.json(data);
+  } catch(err){
+    res.status(500).json({ error: err.message });
+  }
+
 apiRoutes.post('/', (req, res) => {
-  // TODO: Logic for appending data to the db/diagnostics.json file
 });
 
 module.exports = apiRoutes;
