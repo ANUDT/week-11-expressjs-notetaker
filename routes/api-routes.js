@@ -18,8 +18,7 @@ router.post('/api/notes', (req, res) => {
   };
   dbJson.push(newFeedback);
   fs.writeFileSync("db/db.json",JSON.stringify(dbJson));
-  
-  res.json(dbJson);
+    res.json(dbJson);
 });
 
   console.log(req.body);
