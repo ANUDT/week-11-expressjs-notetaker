@@ -1,12 +1,19 @@
 const fs = require ('fs');
+fs.writeFileSync('db.json', notesJson);
+
+console.log ('Saved notes to db,json');
 
 const notes = [
     {
         "title":"Take note",
-        "text":"Test text"
+        "text":"Test text",
+        "id": 1
+    }
+    {
+        "title":"Take note",
+        "text":"Test text",
+        "id": 2
     }
 ];
 
-fs.writeFileSync('db.json', notesJson);
 
-console.log ('Saved notes to db,json');

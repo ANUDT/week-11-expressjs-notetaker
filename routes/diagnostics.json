@@ -1,18 +1,16 @@
 const express = require('express');
-const apiRoutes=express.Router();
+const apiRoutes = express.Router();
 const { v4: uuidv4 } = require('uuid');
-const fs =require ("fs");
-onst { readAndAppend, readFromFile } = require('../helpers/fsUtils');
+const fs = require('fs');
+const { readAndAppend, readFromFile } = require('../helpers/fsUtils');
 
 apiRoutes.get('/diagnostics', async (req, res) => {
   try {
-      const data = await readFromFile('db.json', notesJson);
- });
-
- res.json(data);
-  } catch(err){
+    const data = await readFromFile('db.json'); 
+    res.json(data); 
     res.status(500).json({ error: err.message });
   }
+});
 
 apiRoutes.post('/', (req, res) => {
 });
