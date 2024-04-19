@@ -1,6 +1,5 @@
 const express = require('express');
 const html_routes = require('.routes/html-routes')
-const path =require('path');
 const api_routes = require('./routes/api-routes.js');
 const { clog } = require( './middleware/clog.js');
 
