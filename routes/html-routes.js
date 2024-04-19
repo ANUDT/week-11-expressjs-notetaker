@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { v4: uuidva } = require('uuid');
 
-rouet
+router
 const tipsRouter = require('./tips');
 const feedbackRouter = require('./feedback');
 const diagnosticsRouter =require('./diagnostics');
