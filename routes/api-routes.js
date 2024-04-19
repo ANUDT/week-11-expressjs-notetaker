@@ -21,23 +21,16 @@ router.post('/api/notes', (req, res) => {
     res.json(dbJson);
 });
 
-  console.log(req.body);
-
-  const { username, topic, tip } = req.body;
-
-  if (req.body) {
-    const newTip = {
-      username,
-      tip,
-      topic,
-      tip_id: uuidv4(),
-    };
-
-    readAndAppend(newTip, './db/tips.json');
-    res.json(`Tip added successfully`);
-  } else {
-    res.error('Error in adding tip');
-  }
+router.delete('/api/notes:id', (req, res) => {
+  let data = fs.readFileSync("db/db.json","utf8");
+  const dbJson = JSON.parse(data);
+  const newNotes =dataJSON.filter((note) => {
+    return note.id !== req.params.id;
+});
+fs.writeFileSync("db/db.json",JSON.stringify(newNotes));
+res.json("Note has been removed");
 });
 
-module.exports = tips;
+console.log(req.body);
+
+module.exports = router;
