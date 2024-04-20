@@ -17,3 +17,6 @@ const clog = (req, res, next) => {
 };
 
 module.exports.clog = clog;
+
+//* this code have information regarding HTTP request (GET, POST, DELETE, PUT)
+//* middleware is meant for frameworks for example Express.js for Node.js applications and have access to request or respons object (req or res)
