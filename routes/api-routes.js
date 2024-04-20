@@ -1,10 +1,10 @@
-const tips = require('express').Router();
+const router = require('express').Router();
 const { v4: uuidv4 } = require('uuid');
 const fs = require ("fs");
-const router = require('./html-routes');
+const api_routes = require('./html-routes');
 const { title } = require('process');
 
-router.get('/api/notes', async (req, res) => {
+router.get('/api/routes', async (req, res) => {
   const dbJson = await JSON.parse(fs.readFileSync("db/db.json","utf8"));
   res.json(dbJson);
 });
