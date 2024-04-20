@@ -1,7 +1,24 @@
-{
-"title":"Take note",
-"text":"Test text"
-}
-  
+[
+    {
+        "title": "New note",
+        "text": "some text",
+        "id": "93743832-ec99-47bc-a0cc-3c1f6cf417a8"
+    },
+    {
+        "title": "Hello",
+        "text": "World",
+        "id": "eec51594-6e23-40d5-9027-f1b011931661"
+    },
+    {
+        "title": "asd",
+        "text": "asd",
+        "id": "75cdbf03-f746-4023-b983-1a3222879b64"
+    },
+    {
+        "title": "asd",
+        "text": "ad",
+        "id": "34f278a1-5ae8-4cdb-82ec-00e4edc61754"
+    }
+]
 
 
