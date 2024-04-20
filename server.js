@@ -25,7 +25,7 @@ app.get('/', (req, res) =>
 );
 
 app.get('/routes', (req, res) =>
-  res.sendFile(path.join(__dirname, '/public/routes.html'))
+  res.sendFile(path.join(__dirname, '/public/path.html'))
 );
 
 app.listen(PORT, () => {
