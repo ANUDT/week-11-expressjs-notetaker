@@ -1,13 +1,7 @@
-   {
-        "title":"Take note",
-        "text":"Test text",
-        "id": 1
-    }
-    {
-        "title":"Take note",
-        "text":"Test text",
-        "id": 2
-    };
-
+{
+"title":"Take note",
+"text":"Test text",
+}
+  
 
 

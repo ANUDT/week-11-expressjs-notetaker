@@ -36,3 +36,23 @@ const {
       res.json('Item${noteId} removed');
     });
   });
+
+  notes.post('/', (req, res) => {
+    console.log(req.body);
+
+    const{ title,text} = req.body;
+
+    if (req.body) {
+      const newNote ={
+        title,
+        text,
+        id: uuidv4(),
+      };
+
+      readAndAppend(newNote,'./db/db.json');
+      res.json('Added note succesfully');
+    } else {
+      res.error('Adding note unsuccesfull');
+
+
+    }

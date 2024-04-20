@@ -6,6 +6,7 @@
   "scripts": {
     "test": "jest",
     "start": "node server.js"
+    "express" "node express_js"
   },
   "license": "MIT",
   "dependencies": {
