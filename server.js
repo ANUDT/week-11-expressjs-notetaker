@@ -18,7 +18,7 @@ app.use(html_routes);
 app.use(api_routes);
 
 app.get('/', (req, res) =>
-  res.sendFile('Navigate to/send or/routes'));
+  res.sendFile('Navigate to/send or/routes visit http://localhost:3001/api'));
 
 app.get('/', (req, res) =>
   res.sendFile(path.join(__dirname, 'public/sendFile.html'))
