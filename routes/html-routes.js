@@ -3,8 +3,8 @@ const path = require('path');
 
 router
 const tipsRouter = require('./api-routes');
-const feedbackRouter = require('./feedback');
-const diagnosticsRouter = require('./diagnostics');
+const feedbackRouter = require('./feedback.js');
+const diagnosticsRouter = require('./diagnostics.json');
 
 
 
