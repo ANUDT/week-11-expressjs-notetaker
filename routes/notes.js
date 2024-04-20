@@ -1,5 +1,5 @@
 const notes = require('express').Router();
-const { v4: uuidv4 } = require('uuid'):
+const { v4: uuidv4 } = require('uuid');
 const {
   readFromFile,
   readAndAppend,
@@ -9,15 +9,14 @@ const {
   notes.get('/', (req, res) => {
     const noteId =req.params.note_id;
     readFromFile('.db/db/.json')
-    .then((data)) => {
-    res.json(JSON.parse(data));
+    .then(data) => res.json(JSON.parse(data));
   });
 
   notes.get('/:note_id', (req, res) => {
     const noteId = req.params.note_id;
     readFromFile('.db/db/.json')
     .then((data) => JSON.parse(data))
-    .then((json) => {
+    .then((json) => { 
       const result = json.filter((note) => note.tip_id === tipID);
       return result.lenght > 0
       ? res.json(result)
