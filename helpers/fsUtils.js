@@ -1,5 +1,7 @@
 const fs = require("fs");
 const util = require("util");
+//*node.js will allow to import fs and util modules to use
+
 
 // Promise version of fs.readFile
 const readFromFile = util.promisify(fs.readFile);
@@ -9,6 +11,7 @@ const readFromFile = util.promisify(fs.readFile);
  *  @param {object} content The content you want to write to the file.
  *  @returns {void} Nothing
  */
+
 const writeToFile = (destination, content) =>
   fs.writeFile(destination, JSON.stringify(content, null, 4), (err) =>
     err ? console.error(err) : console.info(`\nData written to ${destination}`)
@@ -32,3 +35,7 @@ const readAndAppend = (content, file) => {
 };
 
 module.exports = { readFromFile, writeToFile, readAndAppend };
+
+//* the function writeToFile will define the destination as input, becomes JSON and output will be succes or error message
+
+//* the function readAndAppend reads the file and add something (append) and then updates the file
