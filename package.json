@@ -7,7 +7,7 @@
   "scripts": {
     "test": "jest",
     "start": "node server.js"
-    "express" "node express_js"
+    "express" "node express.js",
   },
   "license": "MIT",
   "dependencies": {

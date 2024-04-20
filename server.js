@@ -18,11 +18,14 @@ app.use(html_routes);
 app.use(api_routes);
 
 app.get('/', (req, res) =>
-  res.sendFile(path.join(__dirname, '/public/index.html'))
+  res.sendFile('Navigate to/send or/routes'));
+
+app.get('/', (req, res) =>
+  res.sendFile(path.join(__dirname, 'public/sendFile.html'))
 );
 
-app.get('/notes', (req, res) =>
-  res.sendFile(path.join(__dirname, '/public/pages/notes.html'))
+app.get('/routes', (req, res) =>
+  res.sendFile(path.join(__dirname, '/public/routes.html'))
 );
 
 app.listen(PORT, () => {
