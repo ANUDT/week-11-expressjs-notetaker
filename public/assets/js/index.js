@@ -5,6 +5,7 @@ let saveNoteBtn;
 let newNoteBtn;
 let noteList;
 
+//*this is a URL path for '/notes' in Javascript and it picks elements of Document Object Model. DOM is programming interface for web documents in HTML  
 if (window.location.pathname === '/notes') {
   noteForm = document.querySelector('.note-form');
   noteTitle = document.querySelector('.note-title');
