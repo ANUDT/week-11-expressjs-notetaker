@@ -7,9 +7,9 @@ const {
   } = require('../helpers/fsUtils');
 
   notes.get('/', (req, res) => {
-    const noteId =req.params.note_id;
+    const noteId = req.params.note_id;
     readFromFile('.db/db/.json')
-    .then(data) => res.json(JSON.parse(data));
+    .then((data) => res.json(JSON.parse(data))
   });
 
   notes.get('/:note_id', (req, res) => {
@@ -22,4 +22,17 @@ const {
       ? res.json(result)
       :res.json ('no ID for note');
     res.json(JSON.parse(data));
+  })
+
+  notes.delete('/', (req, res) => {
+    const noteId = req.params.note_id;
+    readFromFile('.db/db/.json')
+    .then((data) JSON.parse(data))
+    .then ((json) => {
+     
+      const result =json.filter(note.id !== noteId);
+
+      writeToFile('.db/db/.json',result);
+      res.json('Item${noteId} removed')
+    }
   });
