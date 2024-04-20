@@ -4,7 +4,9 @@ const { readAndAppend, readFromFile } = require('../helpers/fsUtils');
 
 
 fb.get('/', (req, res) =>
-  readFromFile('./db/feedback.json').then((data) => res.json(JSON.parse(data)))
+  readFromFile('./db/feedback.json')
+  .then((data) => 
+  res.json(JSON.parse(data)))
 );
 
 
