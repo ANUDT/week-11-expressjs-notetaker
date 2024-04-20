@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "start": "node server.js"
-     },
+  },
   "license": "MIT",
   "dependencies": {
     "express": "^4.19.2",
@@ -21,6 +21,5 @@
   "devDependencies": {
     "jest": "^29.7.0",
     "nodemon": "^3.1.0"
-    "devStart": "nodemon server.js"
   }
 }
