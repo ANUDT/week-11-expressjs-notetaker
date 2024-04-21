@@ -6,4 +6,6 @@ app.use("/notes", notesRouter);
 
 module.exports = app;
 
+//* Express.js uses a router and modules
+
  

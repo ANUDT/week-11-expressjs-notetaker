@@ -54,6 +54,7 @@ notes.post("/", (req, res) => {
       id: uuidv4(),
     };
 
+    //* add notes in JSON and monitors the response 
     readAndAppend(newNote, "./db/db.json");
     res.json(`Note added successfully 🚀`);
   } else {
