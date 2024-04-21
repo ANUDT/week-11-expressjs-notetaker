@@ -32,3 +32,9 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 
 Mock-Up
 The following GIF shows the web application's appearance and functionality:
+
+![alt text](image.png)
+
+screen recording
+https://drive.google.com/file/d/1t5R125eNeernVkQjJ_UIXdgSVmd5hbJp/view
+https://github.com/ANUDT/week-11-expressjs-notetaker

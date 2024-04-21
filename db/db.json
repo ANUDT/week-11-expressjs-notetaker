@@ -5,8 +5,13 @@
         "id": "eec51594-6e23-40d5-9027-f1b011931661"
     },
     {
-        "title": "asd",
-        "text": "asd",
-        "id": "75cdbf03-f746-4023-b983-1a3222879b64"
+        "title": "Shopping list",
+        "text": "bread\nmilk\nsugar",
+        "id": "bc4e8170-4aec-4c12-a8f1-0e1f3b8b847a"
+    },
+    {
+        "title": "To do today ",
+        "text": "Gym\ngardening\ncoding",
+        "id": "4b2c7711-124b-4460-a929-30df67f612c9"
     }
 ]
