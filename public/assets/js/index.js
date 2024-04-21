@@ -29,6 +29,7 @@ const hide = (elem) => {
 // activeNote is used to keep track of the note in the textarea
 let activeNote = {};
 
+//* the following function are for CRUD on notes on a server with RESTFUL API
 const getNotes = () =>
   fetch('/api/notes', {
     method: 'GET',
